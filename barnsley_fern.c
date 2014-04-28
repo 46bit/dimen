@@ -15,12 +15,24 @@ int main()
 
 	gdImagePtr im = gdImageCreateTrueColor(width, height);
 
+	// Shade image according to how frequently it was reached.
+	/*int h, hues[width * height];
+	for (h = 0; h < width * height; h++)
+	{
+		hues[h] = 0;
+	}*/
+
 	int i;
 	for (i = 0; i < 100000000; i++)
 	{
 		render_frame();
 		int sx = width * (x + 2.1820) / (2.1820 + 2.6558);
 		int sy = height * (1 - y / 9.9983);
+
+		// Shade image according to how frequently it was reached.
+		//if (hues[sy * width + sx] < 255 - 19) hues[sy * width + sx] += 20;
+		//int color = gdImageColorAllocate(im, hues[sy * width + sx], hues[sy * width + sx], hues[sy * width + sx]);
+
 		int color = gdImageColorAllocate(im, 255, 255, 255);
 		gdImageSetPixel(im, sx, sy, color);
 	}
