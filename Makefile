@@ -9,6 +9,7 @@ all:
 	$(CC) $(CFLAGS) gosper_curve.c -o bin/gosper_curve
 	$(CC) $(CFLAGS) mandelbrot.c -o bin/mandelbrot
 	$(CC) $(CFLAGS) barnsley_fern.c -o bin/barnsley_fern
+	$(CC) $(CFLAGS) sierpinski_arrowhead.c -o bin/sierpinski_arrowhead
 
 clean:
 	rm -rf bin
