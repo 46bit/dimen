@@ -7,21 +7,21 @@ make
 ```
 
 ## Dragon Curve
-Outputs turtle commands to render the [Dragon Curve Fractal](). Run and rasterise to `chelonian.png` with:
+Outputs turtle commands to render the [Dragon Curve Fractal](http://en.wikipedia.org/wiki/Dragon_curve). Run and rasterise to `chelonian.png` with:
 
 ```
 ./bin/dragon_curve | ./bin/chelonian
 ```
 
 ## Gosper Curve
-Outputs turtle commands to render the [Gosper Curve Fractal](). Run and rasterise to `chelonian.png` with:
+Outputs turtle commands to render the [Gosper Curve Fractal](https://en.wikipedia.org/wiki/Gosper_curve). Run and rasterise to `chelonian.png` with:
 
 ```
 ./bin/gosper_curve | ./bin/chelonian
 ```
 
 ## Mandelbrot
-Directly render the [Mandelbrot Fractal]() to `mandelbrot.png` with:
+Directly render the [Mandelbrot Set Fractal](https://en.wikipedia.org/wiki/Mandelbrot_set) to `mandelbrot.png` with:
 
 ```
 ./bin/mandelbrot
