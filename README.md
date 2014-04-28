@@ -21,10 +21,17 @@ Outputs turtle commands to render the [Gosper Curve Fractal](https://en.wikipedi
 ```
 
 ## Mandelbrot
-Directly render the [Mandelbrot Set Fractal](https://en.wikipedia.org/wiki/Mandelbrot_set) to `mandelbrot.png` with:
+Directly render the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set) to `mandelbrot.png` with:
 
 ```
 ./bin/mandelbrot
+```
+
+## Barnsley Fern
+Directly render the [Barnsley Fern](https://en.wikipedia.org/wiki/Barnsley_fern) to `barnsley_fern.png` with:
+
+```
+./bin/barnsley_fern
 ```
 
 ## Chelonian
