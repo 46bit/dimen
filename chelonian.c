@@ -7,8 +7,6 @@
 
 #define PI 3.14159265359
 
-// -lgd -lpng -lz -ljpeg -lfreetype -lm
-
 int main()
 {
 	// Current position and direction plus previous positions.
@@ -22,7 +20,6 @@ int main()
 	while (fgets(command_buffer, 20, stdin))
 	{
 		// Run command.
-		float old_pos[2] = {pos_dir[0], pos_dir[1]};
 		cl_run_command(pos_dir, command_buffer);
 
 		// Save new position.

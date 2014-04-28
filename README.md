@@ -1,11 +1,38 @@
 # Dimen
 Fractal generation.
 
-## Chelonian
+## Install
+```
+make
+```
 
+## Dragon Curve
+Outputs turtle commands to render the [Dragon Curve Fractal](). Run and rasterise to `chelonian.png` with:
+
+```
+./bin/dragon_curve | ./bin/chelonian
+```
+
+## Gosper Curve
+Outputs turtle commands to render the [Gosper Curve Fractal](). Run and rasterise to `chelonian.png` with:
+
+```
+./bin/gosper_curve | ./bin/chelonian
+```
+
+## Mandelbrot
+Directly render the [Mandelbrot Fractal]() to `mandelbrot.png` with:
+
+```
+./bin/mandelbrot
+```
+
+## Chelonian
 A basic turtle rasterizer. Input commands via stdin, provide output image filename as argument. This aims to center the drawing in order to ensure maximum visibility.
 
 ### Commands
 `RT 45` to turn right 45°.
+
 `LT 45` to turn left 45°.
+
 `FD 4` to go forward 4 units.

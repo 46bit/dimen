@@ -2,13 +2,6 @@
 #include <stdlib.h>
 #include "dragon_curve.h"
 
-// compile to -g ASM, output to s.s
-//   gcc-4.2 -S s.c
-// assemble with clang, output to ./a.out
-//   rm -f ./a.out && clang s.s
-// decompile to s.dump
-//   gobjdump -S --disassemble ./a.out > s.dump
-
 #define DESCRIBE 0
 #define LOGO_MOVE 19
 
@@ -51,7 +44,7 @@ uint64_t evolve(char **state, uint64_t length)
 {
 	uint64_t new_length = length * 5 + 1;
 	char *new_state = malloc(sizeof(char) * new_length);
-	uint64_t i, j = 0, k;
+	uint64_t i, j = 0;
 	new_state[j++] = 'R';
 	for (i = 0; i < length; i++)
 	{

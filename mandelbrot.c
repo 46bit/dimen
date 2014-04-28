@@ -5,8 +5,6 @@
 #include "gd.h"
 #include "mandelbrot.h"
 
-// -lgd -lpng -lz -ljpeg -lfreetype -lm
-
 int main()
 {
 	// Width and height of image in pixels.
